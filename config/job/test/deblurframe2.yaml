@@ -1,0 +1,140 @@
+# @package _global_
+name: 'testing'
+working_dir: './experiment/${network.model}'
+device: 'cuda:0'
+random_seed: 1234
+num_epoch: 400  # max iteration
+
+data:
+  use_background_generator: true
+  divide_dataset_per_gpu: true
+  rgb_range: 1
+  dataset:
+    train:
+      # IRTeacherDataset(Dataset):
+      #    def __init__(self, patch_size, data_dir, file_format, csv_filename, repeat=4, is_gray=False):
+      model: 'DeblurMaskDisstillDataset'
+      name: 'outliers'
+      params:
+        data_dir: '/home/fubo/data/deblur/outliers/output' #'/home/echo/dataset/denoise/Transunet'
+        csv_filename: 'train.csv'
+        sigma_max: 0.01
+        file_format:
+          - '*.png'
+          - '*.bmp'
+          - '*.jpg'
+        is_pretrain: false
+    test:
+#      model: 'OutlierTestDataset'
+#      name: 'levin'
+#      params:
+#        data_dir: '/home/echo/dataset/deblur/BlurDataset/train-multioptim-deblur/outliers/val/output/blur/0point/levin/1.6'
+#        csv_filename: 'levin.csv'
+#        file_format:
+#          - '*.png'
+#          - '*.jpg'
+#          - '*.bmp'
+#        sigma_max: 0.01
+#        is_pretrain: False
+        model: 'PanDataset'
+        name: 'PanDataset'
+        params:
+          img_no: 6
+          data_dir: '/home/echo/dataset/deblur/BlurDataset/train-multioptim-deblur/jspan-low-illumination'
+          csv_filename: 'im06.csv'
+          file_format:
+              - '*.png'
+          sigma_max: 0.01
+
+#    eval:
+    #      model: '/home/echo/dataset/denoise/Transunet'
+    #      params:
+    #        data_dir: '/home/echo/dataset/denoise/Transunet'
+    #        patch_size: -1 # -1 is test mode, >= 0 is train mode
+    #        file_format: '*.png'
+    #        sigma: 25
+
+  dataloader:
+    train:
+      num_workers: 8
+      batch_size: 16
+#      shuffle: False
+    test:
+      num_workers: 0
+      batch_size: 1
+
+network:
+  model: 'DeblurFrame2'
+  grad_clip: 0.5 #0.5
+  params:
+    in_channels: 3
+    out_channels: 3
+#    mask_path: '/home/echo/code/python/lowlight/outlierdeblur/experiment/pretrain/deblurmask1_training_100.pth'
+
+dist:
+  master_addr: 'localhost'#'192.168.3.202'
+  master_port: '12355'
+  mode: 'nccl'
+  gpus: 0 # 0 for not using dist, -1 for using all gpus
+  timeout: 30 # seconds for timeout. In nccl mode, set ~ for not using timeout
+  rank: 0
+
+log:
+  use_tensorboard: true
+  use_wandb: false
+  wandb_init_conf:
+    name: ${name}
+    entity: ~
+    project: ~
+  summary_interval: 100 # interval of step
+  chkpt_interval: 10 # interval of epoch
+  chkpt_dir: 'chkpt'
+#  metics_chpkt_path: '/home/fubo/code/pytorch-project-template/experiment/DnCNN/outputs/metrics.pt'
+
+
+loss:
+  L1loss:
+    model: 'DeblurFrame2Loss'
+    reg_coefficient: 1
+    params:
+
+
+
+regular:
+  TV:
+    reg_coefficient: 1
+    model: IdentifyRegular
+    params:
+
+
+optimizer:
+  model: 'Adam' # 'AdamW'
+  params:
+    lr: 0.0001 #0.0002
+    betas:
+      - 0.9
+      - 0.999
+
+scheduler:
+  model: 'StepLR'
+  params:
+    step_size: 200
+    gamma: 0.5
+
+#scheduler:
+#  model: 'GradualWarmupScheduler'
+#  params:
+#    multiplier: 1
+#    total_epoch: 3
+#    after_scheduler:
+#      model: 'CosineAnnealingLR'
+#      params:
+#          T_max: 197
+#          eta_min: 0.000001
+
+
+load:
+  wandb_load_path:  #'/home/fubo/code/pytorch-project-template/experiment/DnCNN/outputs/metrics.pt'
+  network_chkpt_path: # '/home/echo/code/python/lowlight/outlierdeblur/experiment/DeblurFrame/outputs/training-2022-03-13_18-12-46/chkpt/training_30.pth'
+  strict_load: False
+  resume_state_path: '/home/echo/code/python/lowlight/outlierdeblur/experiment/pretrain/SDBNet-model.state'

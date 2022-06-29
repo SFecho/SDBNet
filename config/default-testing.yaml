@@ -1,0 +1,12 @@
+# @package _global_
+defaults:
+  - hydra/job_logging: custom
+  - hydra/hydra_logging: colorlog
+#  - job: test/outlierdeblur3
+#  - job: test/maskl2cgdeblur.yaml
+#  - job: train/unet
+  - job: test/deblurframe
+#  - job: train/uformer-gray
+hydra:
+  run:
+    dir: ${working_dir}/outputs/${name}-${now:%Y-%m-%d_%H-%M-%S}

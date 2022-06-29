@@ -1,0 +1,92 @@
+name: training
+working_dir: ./experiment/${network.model}
+device: cuda:0
+random_seed: 1234
+num_epoch: 30
+data:
+  use_background_generator: true
+  divide_dataset_per_gpu: true
+  rgb_range: 1
+  dataset:
+    train:
+      model: OutlineDataset
+      name: outliers
+      params:
+        data_dir: /home/echo/dataset/deblur/BlurDataset/train-multioptim-deblur/crop/output
+        csv_filename: train.csv
+        sigma_max: 0.01
+        file_format:
+        - '*.png'
+        - '*.bmp'
+        - '*.jpg'
+        is_pretrain: false
+    test:
+      model: OutlierTestDataset
+      name: levin
+      params:
+        data_dir: /home/echo/dataset/deblur/BlurDataset/train-multioptim-deblur/outliers/val/output/blur/0point/levin/1.4
+        csv_filename: levin.csv
+        file_format:
+        - '*.png'
+        - '*.jpg'
+        - '*.bmp'
+        sigma_max: 0.01
+        is_pretrain: false
+  dataloader:
+    train:
+      num_workers: 8
+      batch_size: 8
+    test:
+      num_workers: 0
+      batch_size: 1
+network:
+  model: DeblurFrame2
+  grad_clip: 0.5
+  params:
+    in_channels: 3
+    out_channels: 3
+    mask_path: /home/echo/code/python/lowlight/outlierdeblur/experiment/pretrain/deblurmask1_training_100.pth
+dist:
+  master_addr: localhost
+  master_port: '12355'
+  mode: nccl
+  gpus: 0
+  timeout: 30
+  rank: 0
+log:
+  use_tensorboard: true
+  use_wandb: false
+  wandb_init_conf:
+    name: ${name}
+    entity: null
+    project: null
+  summary_interval: 100
+  chkpt_interval: 10
+  chkpt_dir: chkpt
+loss:
+  L1loss:
+    model: DeblurFrame2Loss
+    reg_coefficient: 1
+    params: null
+regular:
+  TV:
+    reg_coefficient: 1
+    model: IdentifyRegular
+    params: null
+optimizer:
+  model: Adam
+  params:
+    lr: 0.0001
+    betas:
+    - 0.9
+    - 0.999
+scheduler:
+  model: StepLR
+  params:
+    step_size: 25
+    gamma: 0.5
+load:
+  wandb_load_path: null
+  network_chkpt_path: null
+  strict_load: false
+  resume_state_path: null

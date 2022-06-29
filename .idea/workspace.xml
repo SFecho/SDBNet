@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="63e5c01a-901f-465d-87d2-7983d8c15c65" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="25qbRAyKTpcYytRN6aHX2TzLukM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/experiment/DeblurFrame/outputs/pan_im06/PanDataset" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/experiment/DeblurFrame/outputs/pan_im06/PanDataset" />
+      <recent name="$PROJECT_DIR$/experiment/DeblurFrame/outputs/0point-1.4/levin" />
+      <recent name="$PROJECT_DIR$/config/job/train" />
+      <recent name="$PROJECT_DIR$/config/job/test" />
+      <recent name="$PROJECT_DIR$/model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/experiment/DeblurFrame2/outputs/1.4" />
+      <recent name="$PROJECT_DIR$/experiment/DeblurFrame2/outputs/training-2022-03-15_21-08-25" />
+      <recent name="$PROJECT_DIR$/experiment/DeblurFrame2/outputs" />
+      <recent name="$PROJECT_DIR$/experiment/pretrain" />
+      <recent name="$PROJECT_DIR$/model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.tester">
+    <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="outlierdeblur" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="deblurframe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="outlierdeblur" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/deblurframe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mydeblur2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="outlierdeblur" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/mydeblur2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tester" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="outlierdeblur" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tester.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="trainer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="outlierdeblur" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trainer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tester" />
+        <item itemvalue="Python.trainer" />
+        <item itemvalue="Python.dataset" />
+        <item itemvalue="Python.deblurframe" />
+        <item itemvalue="Python.mydeblur2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63e5c01a-901f-465d-87d2-7983d8c15c65" name="Default Changelist" comment="" />
+      <created>1646257552838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646257552838</updated>
+      <workItem from="1646257555453" duration="28602000" />
+      <workItem from="1646334867688" duration="240548000" />
+      <workItem from="1647551412574" duration="5818000" />
+      <workItem from="1647799571532" duration="16531000" />
+      <workItem from="1647959642541" duration="4746000" />
+      <workItem from="1648758334911" duration="1214000" />
+      <workItem from="1649152772078" duration="483000" />
+      <workItem from="1649154191030" duration="1220000" />
+      <workItem from="1651493627344" duration="1317000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="528" y="350" width="871" height="434" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1647419692070">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state x="528" y="350" width="871" height="434" key="#com.intellij.fileTypes.FileTypeChooser/0.26.1920.1054@0.26.1920.1054" timestamp="1647419692070" />
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1647596075836">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl/0.26.1920.1054@0.26.1920.1054" timestamp="1647596075836" />
+    <state width="1866" height="157" key="GridCell.Tab.0.bottom" timestamp="1647868855808">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state width="1866" height="157" key="GridCell.Tab.0.bottom/0.26.1920.1054@0.26.1920.1054" timestamp="1647868855808" />
+    <state width="1866" height="157" key="GridCell.Tab.0.center" timestamp="1647868855808">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state width="1866" height="157" key="GridCell.Tab.0.center/0.26.1920.1054@0.26.1920.1054" timestamp="1647868855808" />
+    <state width="1866" height="157" key="GridCell.Tab.0.left" timestamp="1647868855808">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state width="1866" height="157" key="GridCell.Tab.0.left/0.26.1920.1054@0.26.1920.1054" timestamp="1647868855808" />
+    <state width="1866" height="157" key="GridCell.Tab.0.right" timestamp="1647868855808">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state width="1866" height="157" key="GridCell.Tab.0.right/0.26.1920.1054@0.26.1920.1054" timestamp="1647868855808" />
+    <state width="1866" height="329" key="GridCell.Tab.1.bottom" timestamp="1647551400289">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state width="1866" height="329" key="GridCell.Tab.1.bottom/0.26.1920.1054@0.26.1920.1054" timestamp="1647551400289" />
+    <state width="1866" height="329" key="GridCell.Tab.1.center" timestamp="1647551400289">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state width="1866" height="329" key="GridCell.Tab.1.center/0.26.1920.1054@0.26.1920.1054" timestamp="1647551400289" />
+    <state width="1866" height="329" key="GridCell.Tab.1.left" timestamp="1647551400289">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state width="1866" height="329" key="GridCell.Tab.1.left/0.26.1920.1054@0.26.1920.1054" timestamp="1647551400289" />
+    <state width="1866" height="329" key="GridCell.Tab.1.right" timestamp="1647551400289">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state width="1866" height="329" key="GridCell.Tab.1.right/0.26.1920.1054@0.26.1920.1054" timestamp="1647551400289" />
+    <state x="442" y="188" width="1037" height="737" key="SettingsEditor" timestamp="1647551382637">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state x="442" y="188" width="1037" height="737" key="SettingsEditor/0.26.1920.1054@0.26.1920.1054" timestamp="1647551382637" />
+    <state x="772" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1648758334899">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state x="772" y="363" key="com.intellij.ide.util.TipDialog/0.26.1920.1054@0.26.1920.1054" timestamp="1648758334899" />
+    <state x="623" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1646335031681">
+      <screen x="0" y="26" width="1920" height="1054" />
+    </state>
+    <state x="623" y="258" width="672" height="678" key="search.everywhere.popup/0.26.1920.1054@0.26.1920.1054" timestamp="1646335031681" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/deblurframe.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/outlierdeblur$tester.coverage" NAME="tester Coverage Results" MODIFIED="1651494031130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/outlierdeblur$deblurframe.coverage" NAME="deblurframe Coverage Results" MODIFIED="1646822361898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/outlierdeblur$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1647292364639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/outlierdeblur$trainer_l08.coverage" NAME="trainer_l08 Coverage Results" MODIFIED="1646415743326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/outlierdeblur$loss.coverage" NAME="loss Coverage Results" MODIFIED="1646335311391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/layer" />
+    <SUITE FILE_PATH="coverage/outlierdeblur$mydeblur2.coverage" NAME="mydeblur2 Coverage Results" MODIFIED="1646425113001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/outlierdeblur$trainer.coverage" NAME="trainer Coverage Results" MODIFIED="1647378503921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
