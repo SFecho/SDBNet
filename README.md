@@ -5,7 +5,7 @@ Code repo for the paper "Deep non-blind deblurring network for saturated blurry 
 
 
 
-Download the training and testomg dataset from the [[url]](https://www.kaggle.com/datasets/sfecho/sdbnetdataset).
+Download the training and testing dataset from the [[url]](https://www.kaggle.com/datasets/sfecho/sdbnetdataset).
 
 
 
